@@ -40,5 +40,10 @@ public final class Application {
 
         Tyre t2 = (Tyre) context.getBean("tyre2");
         System.out.println(t2);
+
+        //-------------------------------------------------------------------------------------------------
+
+        Vehicle veh4 = (Vehicle) context.getBean("car");
+        System.out.println(veh4);
     }
 }
