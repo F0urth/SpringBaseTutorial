@@ -1,5 +1,7 @@
 package SpringAnnotations;
 
+import SpringAnnotations.ComponentsAndConfigs.ApplicationConfiguration;
+import SpringAnnotations.ComponentsAndConfigs.Phone;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

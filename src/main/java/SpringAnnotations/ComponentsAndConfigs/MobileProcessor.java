@@ -1,4 +1,4 @@
-package SpringAnnotations;
+package SpringAnnotations.ComponentsAndConfigs;
 
 /**
  * @author F0urth
