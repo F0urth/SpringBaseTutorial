@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public final class App {
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext();
+        ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
 
         Phone phone = context.getBean(Phone.class);
         phone.config();
