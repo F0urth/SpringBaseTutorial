@@ -1,4 +1,5 @@
 import Components.Car;
+import Components.SubComponents.Tyre;
 import Components.Vehicle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,11 +18,27 @@ public final class Application {
 
         //-------------------------------------------------------------------------------------------------
 
-        ApplicationContext context = new ClassPathXmlApplicationContext();
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
         Vehicle veh = (Vehicle) context.getBean("vehicle");
 
+        veh.drive();
+
         //-------------------------------------------------------------------------------------------------
 
+        Vehicle veh2 = (Vehicle) context.getBean("car");
+        veh2.drive();
+
+        Vehicle veh3 = (Vehicle) context.getBean("bike");
+        veh3.drive();
+
+        //-------------------------------------------------------------------------------------------------
+
+        Tyre t = (Tyre) context.getBean("tyre");
+        System.out.println(t);
+
+
+        Tyre t2 = (Tyre) context.getBean("tyre2");
+        System.out.println(t2);
     }
 }
