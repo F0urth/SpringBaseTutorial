@@ -1,14 +1,17 @@
-package SpringAnnotations.ComponentsAndConfigs;
+package SpringAnnotations.MagicConfigsWithoutBeanAnnotation.ComponentsAndConfigs;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
  * @author F0urth
  */
+
+@Component
 public class Phone {
 
-    @Autowired
+    @Autowired @Qualifier("mediaTek")
     MobileProcessor mobileProcessor;
 
     public MobileProcessor getMobileProcessor() {
