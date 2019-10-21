@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author F0urth
  */
-@Configuration @ComponentScan(basePackages = "SpringAnnotations.MagicConfigsWithoutBeanAnnotation.ComponentsAndConfigs")
+@Configuration
+@ComponentScan(basePackages = "SpringAnnotations.MagicConfigsWithoutBeanAnnotation.ComponentsAndConfigs")
 public class ApplicationConfiguration {
 }

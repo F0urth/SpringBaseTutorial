@@ -11,7 +11,7 @@
     </bean>
 
     <bean id="tyre2" class="Components.SubComponents.Tyre">
-<!--        <property name="brand" value="MRF"/>-->
+        <!--        <property name="brand" value="MRF"/>-->
         <constructor-arg value="Smth"/>
     </bean>
 </beans>

@@ -1,6 +1,8 @@
 package Components;
 
 import Components.SubComponents.Tyre;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,8 +11,9 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class Car
-    implements Vehicle {
+public class Car implements Vehicle {
+
+    private static final Logger logger = LoggerFactory.getLogger(Car.class);
 
     @Autowired
     private Tyre tyre;
@@ -26,7 +29,7 @@ public class Car
 
     @Override
     public void drive() {
-        System.out.println("Brum brum");
+        logger.info("Brum brum");
     }
 
     @Override

@@ -1,17 +1,19 @@
 package SpringAnnotations.MagicConfigsWithoutBeanAnnotation.ComponentsAndConfigs;
 
-import org.springframework.context.annotation.Primary;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
  * @author F0urth
  */
 @Component
-public class MediaTek
-    implements MobileProcessor {
+public class MediaTek implements MobileProcessor {
+
+    private static final Logger logger = LoggerFactory.getLogger(MediaTek.class);
 
     @Override
     public void process() {
-        System.out.println("Sec best xD " + this.getClass());
+        logger.info("Sec best xD " + this.getClass());
     }
 }

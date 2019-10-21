@@ -8,11 +8,7 @@ import org.slf4j.LoggerFactory;
  */
 public class Tyre {
 
-    private static final Logger logger;
-
-    static {
-        logger = LoggerFactory.getLogger(Tyre.class);
-    }
+    private static final Logger logger = LoggerFactory.getLogger(Tyre.class);
 
     private String brand;
 

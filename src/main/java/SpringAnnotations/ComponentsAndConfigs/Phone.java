@@ -1,12 +1,15 @@
 package SpringAnnotations.ComponentsAndConfigs;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  * @author F0urth
  */
 public class Phone {
+
+    private static final Logger logger = LoggerFactory.getLogger(Phone.class);
 
     @Autowired
     MobileProcessor mobileProcessor;
@@ -20,7 +23,7 @@ public class Phone {
     }
 
     public void config() {
-        System.out.println("No po prostu telefon");
+        logger.info("No po prostu telefon");
         mobileProcessor.process();
     }
 
