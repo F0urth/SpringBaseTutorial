@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <springV>5.2.0.RELEASE</springV>
+        <springV>5.3.18</springV>
         <maven.compiler.target>1.8</maven.compiler.target>
         <meven.compiler.source>1.8</meven.compiler.source>
     </properties>
